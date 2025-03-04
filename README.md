@@ -1,4 +1,4 @@
-# PathIO <a href='https://github.com/LudvigOlsen/nattrs'><img src='https://raw.githubusercontent.com/LudvigOlsen/nattrs/main/nattrs_242x280_259dpi.png' align="right" height="140" /></a>
+# pathio
 
 Path collection class for checking paths for input and output files/directories.
 
@@ -70,7 +70,7 @@ paths.set_path(
 )
 ```
 
-Or set multiple at a time to avoid rerunning checks unnecessarily.
+Or set multiple at a time to avoid rerunning checks unnecessarily:
 
 ```python
 paths.set_paths(
@@ -82,20 +82,20 @@ paths.set_paths(
 )
 ```
 
-Create the output directories that do not exist.
+Create the output directories that do not exist:
 
 ```python
 paths.mk_output_dirs(collection="out_dirs")
 ```
 
-Get a path.
+Get a path:
 
 ```python
 paths["in_file"]  # or
 paths.get_path(name="in_file", as_str=False, raise_on_fail=True)
 ```
 
-Remove file from disk.
+Remove file from disk:
 
 ```python
 paths.rm_file(name="in_file")
@@ -110,7 +110,7 @@ paths.update(other=other_paths)
 ```
 
 Find the combinations of keys and paths in the collections of this object
-that are not in the collections of another object.
+that are not in the collections of another object:
 
 ```python
 paths.difference(other=other_paths)
