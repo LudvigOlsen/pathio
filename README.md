@@ -3,7 +3,7 @@
 Path collection class for checking paths for input and output files/directories.
 
 - Initializing a collection (and later path additions) runs the suite of checks:
-  - Duplication, existence (inputs), ... TODO <add all checks> 
+  - Duplication, existence (inputs), ... TODO add all checks
 - Printing/logging the collection provides a summary of the paths. 
 - Paths are converted to `pathlib.Path` objects and missing directories can be created.
 - Can create missing output directories.
